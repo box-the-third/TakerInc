@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://lottie.host/embed/688b63d4-1115-47d6-bb44-962746121e91/enetuZrBmg.json"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taker Inc Landing Page</title>
+    <style>
+        .video-banner {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .video-banner video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .overlay-heading {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 3rem;
+        }
+        .overlay-text {
+            font-family: 'Khand', sans-serif;
+            font-size: 1.5rem;
+        }
+        .button-gold {
+            font-family: 'Alfa Slab One';
+            background-color: #FFD700;
+            border: none;
+            color: black;
+        }
+        .section {
+            display: none;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        .section.active {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Taker Inc 
+            <div class="license-info">
+            [License Number: B03518
+            Category: BK]
+          </div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+              <a class="nav-link" href="driver_info_form.html">Become a Driver</a>
+              <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
+              <a class="nav-link" href="signup.html">Get in Touch!</a>
+              <a class="nav-link" href="">TLC Vehicle Rental</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <section>
+        <div class="video-banner">
+            <video loop autoplay muted>
+                <source src="vid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-overlay d-flex align-items-center">
+                <img src="takerlogo.jpeg" alt="Taker Inc Logo" width="350" height="350">
+                <div class="ms-3">
+                    <h1 class="overlay-heading">About Us</h1>
+                    <p class="overlay-text">At Taker Inc, we are dedicated to providing exceptional non-emergency medical transportation services across New York. Our focus is on ensuring that our clients experience safe, reliable, and comfortable transportation, especially those who require wheelchair accessible vehicles (WAV).</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-banner">
+            <video loop autoplay muted>
+                <source src="vid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-overlay">
+                <h1 class="overlay-heading">Smooth Transportation is an integral part of Health Care</h1>
+                <p class="overlay-text">Our mission is to offer superior transportation services that cater to the unique needs of our clients, enhancing their quality of life through accessibility and convenience.</p>
+                <p class="overlay-text">We envision a world where transportation barriers are eliminated, and every individual, regardless of mobility challenges, can travel with ease and dignity.</p>
+            </div>
+        </div>
+        <div class="video-banner">
+          <video loop autoplay muted>
+              <source src="vid3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <div class="text-overlay">
+              <h1 class="overlay-heading">Who we are</h1>
+              <p class="overlay-text">Taker Inc was founded with the aim of addressing the transportation needs of New York, specially those with mobility challenges. Over the years, we have grown our fleet and expanded our services, all while maintaining our commitment to safety, reliability, and compassionate care.</p>
+          </div>
+      </div>
+    </section>
+
+    <section id="infographics" style="font-family: 'Alfa Slab One';">
+        <div id="section1" class="section active">
+            <h2>Population and Diversity</h2>
+            <p>High Population Density: New York City has a population of 8,804,190 as of April 1, 2020, making it one of the most densely populated cities in the United States.</p>
+            <p>Significant Growth: The population has increased by 629,057 since the 2010 Census, highlighting the city's growing demand for efficient and inclusive transportation options.</p>
+        </div>
+        <div id="section2" class="section">
+            <h2>Challenges for Disabled Residents</h2>
+            <p>Limited Accessible Taxis: Out of the entire licensed fleet, there were only 4,297 wheelchair-accessible vehicles as of June 2023. This means that accessible taxis are a rare find and not always in service, making spontaneous travel difficult for disabled residents.</p>
+            <p>Inadequate Public Transportation: Only about 30% of the subway system is accessible, and even these accessible stations often face issues like broken elevators. Buses are slow, crowded, and unreliable, and paratransit services require advance scheduling and are inconsistent.</p>
+        </div>
+        <div id="section3" class="section">
+            <h2>Necessity for WAV</h2>
+            <p>Vital for Autonomy: Accessible taxis provide crucial autonomy for disabled individuals, allowing them to travel spontaneously without depending on pre-scheduled services.</p>
+            <p>Equity and Inclusion: Promoting WAVs can help bridge the transportation gap, ensuring that disabled residents are prioritized and have equal access to the city's amenities and opportunities.</p>
+        </div>
+        <div id="section4" class="section">
+            <h2>Comparative Lack of Accessible Options</h2>
+            <p>Inaccessibility in Alternative Transportation: Rideshare apps are not a viable solution for all, as they require smartphones, which not every New Yorker or visitor possesses. This further underscores the need for reliable, readily available WAVs.</p>
+        </div>
+        <div id="section5" class="section">
+            <h2>Benefits of Promoting WAV</h2>
+            <p>Improved Quality of Life: Ensuring more WAVs are available will significantly enhance the quality of life for disabled individuals, providing them with the freedom to travel as needed.</p>
+            <p>Compliance with ADA: Increasing the number of WAVs aligns with the goals of the Americans with Disabilities Act, promoting greater accessibility and inclusivity in public transportation.</p>
+            <p>Economic Advantages: A more inclusive transportation system can boost the local economy by enabling more people to participate in the workforce, attend events, and engage in commerce.</p>
+        </div>
+        <div id="section6" class="section">
+            <h2>Our Message</h2>
+            <p>"Enhancing accessibility in New York City's transportation system is not just a necessity—it's a right. With over 8.8 million residents, including a significant number of disabled individuals, it's crucial to provide reliable and accessible transportation options. Despite having 4,297 wheelchair-accessible vehicles in the licensed fleet, many disabled residents still struggle with spontaneous travel due to limited availability and service. By increasing the number of Wheelchair Accessible Vehicles, we can ensure that all New Yorkers have equal access to the city's vast opportunities and amenities. Let's make New York City a more inclusive and accessible place for everyone."</p>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Taker Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('book-now-btn').addEventListener('click', function() {
+            window.location.href = 'booking_form.html';
+        });
+
+        document.getElementById('drive-with-takers-btn').addEventListener('click', function() {
+            window.location.href = 'driver_info_form.html';
+        });
+        
+
+        let currentSection = 0;
+        const sections = document.querySelectorAll('.section');
+
+        function showNextSection() {
+    
+    sections[currentSection].style.opacity = 0;
+    const nextSection = (currentSection + 1) % sections.length;
+    
+    
+    setTimeout(() => {
+        sections[currentSection].style.display = 'none'; 
+        sections[nextSection].style.display = 'block'; 
+        setTimeout(() => {
+            sections[nextSection].style.opacity = 1; 
+        }, 50); 
+        
+        currentSection = nextSection;
+    }, 2000);
+}
+
+sections[currentSection].style.display = 'block';
+sections[currentSection].style.opacity = 1;
+
+setInterval(showNextSection, 16000);
+    </script>
+</body>
+</html>

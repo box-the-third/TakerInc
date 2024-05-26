@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Information Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Taker Inc</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
+          <a class="nav-link" href="driver_info_form.html">Become a Driver</a>
+          <a class="nav-link" href="signup.html">Register</a>
+        </div>
+      </div>
+    </div>
+</nav>
+
+<style>
+
+#driver-form{
+  background-color: black;
+}
+
+.transparent-btn {
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 2px solid white;
+      color: white;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+.transparent-btn:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      border-color: white;
+    }
+
+    /* Smooth scroll effect */
+html {
+      scroll-behavior: smooth;
+    }
+
+.driver-form a {
+  color: #000000; 
+}
+
+.driver-form a:hover {
+  text-decoration: underline;  
+}
+
+h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: larger;
+  font-style: italic;
+}
+
+h1{
+  text-align: center;
+  font-weight: 300;
+  font-size: larger;
+  font-style: italic;
+}
+
+
+.doc-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.doc-container h2 {
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.doc-container.flex {
+  display: flex;  
+  justify-content: space-around;
+  background-color: #ffe100;
+  border-color: #000000;
+}
+
+.containerx{
+  background-color: #facd38;
+}
+
+
+.TLC{
+  font-weight: bold;  /* Make the text bold (optional) */
+  background-color: #ffe100;  /* Add a light background (optional) */
+  padding: 1px 1px;  /* Add some padding (optional) */
+  border-radius: 3px;  /* Add rounded corners (optional) */
+
+}
+
+ul {
+    list-style: none;
+    padding: 8px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+#docudocu{
+  background-color: hsla(0, 0%, 88%, 0.495);
+  border-radius: 2px;
+  border-color: #000000;
+  border-width: 1px;
+}
+</style>
+<div class="video-banner">
+  <video loop autoplay muted>
+    <source src="drivah.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="text-overlay">
+    <h2 class="overlay-heading">Join Taker Inc Today</h2>
+    <p class="overlay-text">Are you a driver looking for flexible opportunities?</p>
+    <p class="overlay-text">Register now and become part of our dedicated team</p>
+    <br>
+    <button class="transparent-btn mt-8" onclick="document.getElementById('driver-form').scrollIntoView();">Sign Up</button>
+  </div>
+</div>
+
+<section id="docudocu">
+  <br>
+  <h3>All you'll need to be a driver at Taker Inc is a TLC license from the<a href="https://www.nyc.gov/site/tlc/index.page" style="font-weight: bold;"> NYC TLC <span class="TLC">(Taxi and Limousine Commission)</span></a> & a TLC Licensed Vehicle (owned or rented) </h3>  
+  <br>
+  <h1>Once you have your documents ready, Just Click on Sign Up! </h1>
+
+    <div class="doc-container flex">
+        <h2>Personal Documents</h2>
+        <ul>
+            <li>DMV Driver's License</li>
+            <li>TLC Driver's License</li>
+            <li>Social Security Card</li>
+            <li>Void Check/Direct Deposit</li>
+        </ul>
+    </div>
+
+    <div class="doc-container flex">
+        <h2>Vehicle Documentation</h2>
+        <ul>
+            <li>Registration Paper</li>
+            <li>Certificate of Liability</li>
+            <li>Proof Of Insurance</li>
+            <li>State of New York Inspection<br>(Document)</li>
+            <li>TLC Inspection (Document)</li>
+        </ul>
+    </div>
+  </section>
+
+
+  <section id="driver-form" class="p-8">
+
+  <div class="container mt-5">
+    <div class="containerx">
+      <h1>Driver Information Form</h1>
+      <form class="driver-form">
+        <h2>Personal Documents:</h2>
+        <div class="mb-3">
+          <label for="dmv-license" class="form-label">DMV Driver's License</label>
+          <input type="file" class="form-control" id="dmv-license" required>
+        </div>
+        <div class="mb-3">
+          <label for="tlc-license" class="form-label">TLC Driver's License</label>
+          <input type="file" class="form-control" id="tlc-license" required>
+        </div>
+        <div class="mb-3">
+          <label for="social-security" class="form-label">Social Security Number</label>
+          <input type="password" class="form-control" id="social-security" maxlength="9" required> 
+        </div>
+        <div class="mb-3">
+          <label for="void-check-deposit" class="form-label">Mode of Payment</label>
+          <select class="form-control" id="void-check-deposit" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="void-check">Void Check</option>
+            <option value="direct-deposit">Direct Deposit</option>
+          </select>
+        </div>
+        <div class="mb-3" id="void-check-container" style="display: none;">
+          <label for="void-check" class="form-label">Void Check</label>
+          <input type="file" class="form-control" id="void-check">
+        </div>
+        <div class="mb-3" id="direct-deposit-container" style="display: none;">
+          <label for="direct-deposit" class="form-label">Direct Deposit</label>
+          <input type="file" class="form-control" id="direct-deposit">
+        </div>
+
+        <h2>Vehicle Documentation:</h2>
+        <div class="mb-3">
+          <label for="registration" class="form-label">Registration Paper</label>
+          <input type="file" class="form-control" id="registration" required>
+        </div>
+        <div class="mb-3">
+          <label for="liability-certificate" class="form-label">Certificate of Liability</label>
+          <input type="file" class="form-control" id="liability-certificate" required>
+        </div>
+        <div class="mb-3">
+          <label for="insurance-proof" class="form-label">Proof of Insurance</label>
+          <input type="file" class="form-control" id="insurance-proof" required>
+        </div>
+        <div class="mb-3">
+          <label for="ny-inspection" class="form-label">State of New York Inspection</label>
+          <input type="file" class="form-control" id="ny-inspection" required>
+        </div>
+        <div class="mb-3">
+          <label for="tlc-inspection" class="form-label">TLC Inspection</label>
+          <input type="file" class="form-control" id="tlc-inspection" required>
+        </div>
+        <button type="submit" class="btn btn-primary button-gold" >Submit</button>
+      </form>
+    </div>
+  </div>
+  </section>
+ 
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Taker Inc. All rights reserved.</p>
+    </div>
+</footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+    
+    const socialSecurityInput = document.getElementById('social-security');
+    const driverForm = document.getElementById('driver-form');
+
+    // Mask the SSN input with asterisks while maintaining formatting
+    socialSecurityInput.addEventListener('input', function() {
+      let value = this.value.replace(/\D/g, ''); // Remove non-digit characters
+      let formattedValue = '';
+
+      if (value.length <= 3) {
+        formattedValue = value;
+      } else if (value.length <= 5) {
+        formattedValue = value.slice(0, 3) + '-' + value.slice(3);
+      } else {
+        formattedValue = value.slice(0, 3) + '-' + value.slice(3, 5) + '-' + value.slice(5);
+      }
+
+      // Replace digits with asterisks for security
+      let maskedValue = formattedValue.replace(/\d/g, '*');
+
+      // Keep the real value in a data attribute
+      this.setAttribute('data-ssn', value);
+      this.value = maskedValue;
+    });
+
+    // Encrypt the SSN before form submission
+    driverForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const ssn = socialSecurityInput.getAttribute('data-ssn');
+      if (ssn.length === 9) {
+        // Encrypt the SSN using CryptoJS
+        const encryptedSSN = CryptoJS.AES.encrypt(ssn, 'secret-key-123').toString();
+
+        // Create a hidden input to store the encrypted SSN
+        const encryptedSSNInput = document.createElement('input');
+        encryptedSSNInput.type = 'hidden';
+        encryptedSSNInput.name = 'encrypted-ssn';
+        encryptedSSNInput.value = encryptedSSN;
+
+        // Append the hidden input to the form
+        driverForm.appendChild(encryptedSSNInput);
+
+        // Clear the SSN input field to avoid sending it in plain text
+        socialSecurityInput.value = '';
+        socialSecurityInput.removeAttribute('data-ssn');
+
+        // Submit the form
+        driverForm.submit();
+      } else {
+        alert('Please enter a valid Social Security Number.');
+      }
+    });
+        
+        // Show or hide the appropriate input field based on the selected option
+    const voidCheckDepositSelect = document.getElementById('void-check-deposit');
+    const voidCheckContainer = document.getElementById('void-check-container');
+    const directDepositContainer = document.getElementById('direct-deposit-container');
+
+    voidCheckDepositSelect.addEventListener('change', function() {
+      if (this.value === 'void-check') {
+        voidCheckContainer.style.display = 'block';
+        directDepositContainer.style.display = 'none';
+      } else if (this.value === 'direct-deposit') {
+        voidCheckContainer.style.display = 'none';
+        directDepositContainer.style.display = 'block';
+      }
+    });
+    
+
+    
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taker Inc. Registration</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="validation.js"></script>
+  <style>
+    .video-banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .video-banner video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    .text-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .overlay-heading {
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 3rem;
+    }
+    .overlay-text {
+        font-family: 'Khand', sans-serif;
+        font-size: 1.5rem;
+    }
+    .button-gold {
+        font-family: 'Alfa Slab One';
+        background-color: #FFD700;
+        border: none;
+        color: black;
+    }
+    .section {
+        display: none;
+    }
+    .section.active {
+        display: block;
+    }
+
+   body {
+  background-image: url('merx.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Taker Inc</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
+              <a class="nav-link" href="driver_info_form.html">Become a Driver</a>
+              <a class="nav-link" href="signup.html">Register</a>
+            </div>
+          </div>
+        </div>
+    </nav><br>
+  <div class="container">
+    <div class="social-login">
+        <a href="https://www.facebook.com" class="facebook-btn"><i class="fab fa-facebook"></i> Sign Up with Facebook</a>
+        <a href="https://www.gmail.com" class="gmail-btn"><i class="fab fa-google"></i> Sign Up with Gmail</a>
+    </div>
+
+    <p class="or">Alternatively, you can join our mailing list!</p>
+
+    <form action="/register" method="post" class="platform-signup">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="gender">Gender:</label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefer_not_to_say">Prefer Not to Disclose</option>
+      </select>
+
+      <label for="validationServerEmail" class="form-label">Email:</label>
+      <input type="email" name="email" id="validationServerEmail" aria-describedby="validationServerEmailFeedback" required>
+      <div id="validationServerEmailFeedback" class="invalid-feedback">
+        Please provide a valid email address.
+      </div>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required>
+      <span class="password-hint" style="padding: 10px; margin: 2px;">Password must be at least 8 characters and include a symbol (!@#$&%*)</span>
+      
+      <div class="lightning">
+        <div class="noisy">
+          <span>Almost There!</span>
+          Sign up
+        </div>
+        <div class="noisy">
+          <span>Lets Go!</span>
+        </div>
+      </div>      
+      <button type="submit" class="button-gold">Sign Up</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
