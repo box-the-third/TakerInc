@@ -32,9 +32,11 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="aboutus.html">About Us</a>
-            <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
             <a class="nav-link" href="driver_info_form.html">Become a Driver</a>
-            <a class="nav-link" href="signup.html">Register</a>
+            <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
+            <a class="nav-link" href="signup.html">Get in Touch!</a>
+            <a class="nav-link" href="tlcvehiclerental.html">TLC Vehicle Rental</a>
+            <a class="nav-link" href="login.html">Sign In</a>
           </div>
         </div>
       </div>
@@ -48,10 +50,10 @@
         <div class="TakerBooky">
         <img src="takerlogo.jpeg" alt="Taker Inc Logo" width="350" height="350">
         <!--<p>Step 1: Write your Name</p>
-        <p>Step 2: Write your Email</p>
-        <p>Step 1: Provide your Phone Number</p>
-        <p>Step 1: Let us know if you're Insured</p>
-        <p>Step 1: Choose a vehicle type</p>
+            <p>Step 2: Write your Email</p>
+            <p>Step 1: Provide your Phone Number</p>
+            <p>Step 1: Let us know if you're Insured</p>
+            <p>Step 1: Choose a vehicle type</p>
         -->
         </div>
       <h1>Booking Form</h1>
@@ -149,6 +151,11 @@
       if (selectedInsurance === 'medicaid') {
         event.preventDefault();
         window.location.href = 'https://www.medanswering.com/enrolleeLogin.taf';
+      }
+
+      else if(selectedInsurance==='public'){
+        event.preventDefault();
+        window.location.href = 'nonmedbooking.html'
       }
     });
   </script>

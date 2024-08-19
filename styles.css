@@ -1,6 +1,4 @@
 
-
-
 body {
     font-family: "Khand", sans-serif;
 }
@@ -22,6 +20,11 @@ html{
     padding: 1rem;
 }
 
+.TakerBooky {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .navbar-brand {
     color: #000000;

@@ -21,9 +21,11 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="aboutus.html">About Us</a>
-          <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
           <a class="nav-link" href="driver_info_form.html">Become a Driver</a>
-          <a class="nav-link" href="signup.html">Register</a>
+          <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
+          <a class="nav-link" href="signup.html">Get in Touch!</a>
+          <a class="nav-link" href="tlcvehiclerental.html">TLC Vehicle Rental</a>
+          <a class="nav-link" href="login.html">Sign In</a>
         </div>
       </div>
     </div>
@@ -152,7 +154,7 @@ li {
             <li>DMV Driver's License</li>
             <li>TLC Driver's License</li>
             <li>Social Security Card</li>
-            <li>Void Check/Direct Deposit</li>
+            <li>Zelle</li>
         </ul>
     </div>
 
@@ -160,9 +162,8 @@ li {
         <h2>Vehicle Documentation</h2>
         <ul>
             <li>Registration Paper</li>
-            <li>Certificate of Liability</li>
             <li>Proof Of Insurance</li>
-            <li>State of New York Inspection<br>(Document)</li>
+            <li>State of Inspection<br>(Document)</li>
             <li>TLC Inspection (Document)</li>
         </ul>
     </div>
@@ -191,35 +192,25 @@ li {
         <div class="mb-3">
           <label for="void-check-deposit" class="form-label">Mode of Payment</label>
           <select class="form-control" id="void-check-deposit" required>
-            <option value="" disabled selected>Select an option</option>
-            <option value="void-check">Void Check</option>
-            <option value="direct-deposit">Direct Deposit</option>
+            <option value="" disabled selected>We accept Zelle</option>
+            <option value="void-check">Zelle</option>
           </select>
         </div>
-        <div class="mb-3" id="void-check-container" style="display: none;">
-          <label for="void-check" class="form-label">Void Check</label>
-          <input type="file" class="form-control" id="void-check">
+        <div class="mb-3" id="Zelle-container" style="display: none;">
+          <label for="Zelle" class="form-label">Zelle</label>
+          <input type="file" class="form-control" id="Zelle">
         </div>
-        <div class="mb-3" id="direct-deposit-container" style="display: none;">
-          <label for="direct-deposit" class="form-label">Direct Deposit</label>
-          <input type="file" class="form-control" id="direct-deposit">
-        </div>
-
         <h2>Vehicle Documentation:</h2>
         <div class="mb-3">
           <label for="registration" class="form-label">Registration Paper</label>
           <input type="file" class="form-control" id="registration" required>
         </div>
         <div class="mb-3">
-          <label for="liability-certificate" class="form-label">Certificate of Liability</label>
-          <input type="file" class="form-control" id="liability-certificate" required>
-        </div>
-        <div class="mb-3">
           <label for="insurance-proof" class="form-label">Proof of Insurance</label>
           <input type="file" class="form-control" id="insurance-proof" required>
         </div>
         <div class="mb-3">
-          <label for="ny-inspection" class="form-label">State of New York Inspection</label>
+          <label for="ny-inspection" class="form-label">State of Inspection</label>
           <input type="file" class="form-control" id="ny-inspection" required>
         </div>
         <div class="mb-3">
@@ -302,16 +293,15 @@ li {
     });
         
         // Show or hide the appropriate input field based on the selected option
-    const voidCheckDepositSelect = document.getElementById('void-check-deposit');
-    const voidCheckContainer = document.getElementById('void-check-container');
-    const directDepositContainer = document.getElementById('direct-deposit-container');
+    const voidCheckDepositSelect = document.getElementById('Zelle-deposit');
+    const ZelleContainer = document.getElementById('Zelle-container');
 
     voidCheckDepositSelect.addEventListener('change', function() {
-      if (this.value === 'void-check') {
-        voidCheckContainer.style.display = 'block';
+      if (this.value === 'Zelle') {
+        ZelleContainer.style.display = 'block';
         directDepositContainer.style.display = 'none';
       } else if (this.value === 'direct-deposit') {
-        voidCheckContainer.style.display = 'none';
+        ZelleContainer.style.display = 'none';
         directDepositContainer.style.display = 'block';
       }
     });
