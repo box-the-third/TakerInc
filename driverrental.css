@@ -1,0 +1,137 @@
+body {
+    font-family: "Khand", sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    border-bottom: 2px solid #000;
+    color: gold;
+    box-shadow: 0px 4px 2px -2px gray;
+    padding: 1rem;
+    margin-bottom: auto;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.license-info {
+    display: inline-block;
+    font-size: 8px;
+    color: #1f1f1f;
+    margin-top: -6px;
+    line-height: 0.9;
+    margin-left: 1.4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd500;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.container {
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.btn-gold {
+    font-family: 'Alfa Slab One' !important;
+    background-color: #FFD700 !important;
+    border: none !important;
+    color: black !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-gold:hover {
+    background-color: #e6c200;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    color: #ccc;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+footer p {
+    font-family: "Alfa Slab One", serif;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+footer .social-media {
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .social-media li a {
+    color: inherit;
+}
+
+footer .social-media li a:hover {
+    text-decoration: none;
+    color: #000;
+}

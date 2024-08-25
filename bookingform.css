@@ -1,0 +1,200 @@
+body {
+    font-family: 'Khand', sans-serif;
+    background-color: #f8f9fa;
+}
+
+body {
+    background-image: url('ca.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    border-bottom: 2px solid #000;
+    color: gold;
+    box-shadow: 0px 4px 2px -2px gray;
+    padding: 1rem;
+}
+
+
+.navbar-brand {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.license-info {
+    display: inline-block;
+    font-size: 8px;
+    color: #1f1f1f;
+    margin-top: -6px;
+    line-height: 0.9;
+    margin-left: 1.4px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd500;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.container {
+    margin-top: 20px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.card {
+    margin-bottom: 20px;
+}
+.btn-gold {
+    font-family: 'Alfa Slab One' !important;
+    background-color: #FFD700 !important;
+    border: none;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 500 !important;
+}
+.btn-gold:hover {
+    background-color: #e6c200;
+}
+
+.TakerBooky {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100%; /* Ensure the div takes up its container's height */
+}
+
+.booking-form {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h1 {
+    font-family: "Khand", serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.booking-form select,
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.booking-form select {
+    background-color: #9fe2fff9;
+}
+
+.booking-form button {
+    background-image: linear-gradient(to right, #ffdf00, #ffa500);
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.booking-form button:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 40px rgba(255, 165, 0, 0.8);
+}
+
+.booking-form button:active {
+    transform: translateY(1px);
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-caption p{
+    background-color: hsla(0, 0%, 0%, 0.582);
+}
+
+.carousel-caption h5{
+    background-color: hsla(0, 0%, 0%, 0.603);
+
+}
+
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Alfa Slab One", serif;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+footer .social-media {
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .social-media li a {
+    color: inherit;
+}
+
+footer .social-media li a:hover {
+    text-decoration: none;
+    color: #000;
+}

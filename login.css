@@ -1,76 +1,127 @@
-
-
-
-body {
-    font-family: "Khand", sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-  }
 
-html{
-    scroll-behavior: smooth;
+body {
+background-color: rgb(67, 67, 67);
+font-weight: 700;
+
+}
+.container-fluid {
+    width: 100%;
 }
 
 .navbar {
-    border-bottom: 2px solid #000;
-    color: gold;
-    box-shadow: 0px 4px 2px -2px gray;
-    padding: 1rem;
+  border-bottom: 2px solid #000;
+  color: gold;
+  box-shadow: 0px 4px 2px -2px gray;
+  padding: 1rem;
 }
 
 
 .navbar-brand {
-    color: #000000;
-    font-size: 1.5rem;
-    font-weight: bold;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .license-info {
-    display: inline-block;
-    font-size: 8px;
-    color: #1f1f1f;
-    margin-top: -6px;
-    line-height: 0.9;
-    margin-left: 1.4px;
-    font-family:Arial, Helvetica, sans-serif;
+  display: inline-block;
+  font-size: 8px;
+  color: #1f1f1f;
+  margin-top: -6px;
+  line-height: 0.9;
+  margin-left: 1.4px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .navbar-nav .nav-link {
-    color: #000000;
-    margin-right: 1rem;
-    transition: color 0.3s;
+  color: #000000;
+  margin-right: 1rem;
+  transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffd500;
+  color: #ffd500;
 }
 
 .navbar-toggler {
-    border: none;
+  border: none;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-link.active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .nav-link.disabled {
-    opacity: 0.5;
-    pointer-events: none;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.container {
+  margin-top: 20px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header h1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.card {
+  margin-bottom: 20px;
+}
+.btn-gold {
+  font-family: 'Alfa Slab One' !important;
+  background-color: #FFD700 !important;
+  border: none;
+  color: black;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 500 !important;
+}
+.btn-gold:hover {
+  background-color: #e6c200;
 }
 
-.TakerBooky {
-    display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    height: 100%; /* Ensure the div takes up its container's height */
+.payment-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #FFD700;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 100px auto 0;
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="email"],
+.payment-form input[type="password"],
+.payment-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+    background-color: #222;
+    color: #FFD700;
+}
+
+.payment-form input[type="submit"] {
+    background-color: #FFD700;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.payment-form input[type="submit"]:hover {
+    background-color: #e6c200;
 }
 
 .video-banner {
@@ -79,6 +130,7 @@ html{
     height: 100vh;
     overflow: hidden;
 }
+
 .video-banner video {
     position: absolute;
     top: 50%;
@@ -89,6 +141,7 @@ html{
     transform: translate(-50%, -50%);
     z-index: -1;
 }
+
 .text-overlay {
     position: absolute;
     top: 0;
@@ -103,22 +156,27 @@ html{
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
 }
+
 .overlay-heading {
     font-family: 'Alfa Slab One', cursive;
     font-size: 3rem;
 }
+
 .overlay-text {
     font-family: 'Khand', sans-serif;
     font-size: 1.5rem;
 }
+
 .button-gold {
+    font-family: 'Alfa Slab One';
     background-color: #FFD700;
     border: none;
     color: black;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.2s;
 }
 
 .button-gold:hover {
-    opacity: 1;
     box-shadow: 0 0 40px rgba(90, 79, 57, 0.8);
 }
 
@@ -126,81 +184,23 @@ html{
     transform: translateY(1px);
 }
 
+.platform-signup {
+    background-color: #000;
+    padding: 20px;
   
-.carousel-inner img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    box-shadow: 0 0 20px rgba(218, 218, 218, 0.1);
+    
 }
 
-.carousel-caption p{
-    background-color: hsla(0, 0%, 0%, 0.582);
-}
-
-.carousel-caption h5{
-    background-color: hsla(0, 0%, 0%, 0.603);
-
-}
-
-
-.section {
-    display: none;
-    transition: opacity 2s ease-in-out;
-}
-
-.section.active {
+.platform-signup label {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
     display: block;
 }
 
-.section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(19, 19, 19, 0.76);
-    overflow: visible;
-}
-
-.section p {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #000000;
-    text-align: justify;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.788);
-}
-
-#infographics {
-    background-color: rgba(255, 241, 40, 0.785);
-    object-fit: cover;
-    padding: 20px;
-    box-shadow: 0 0 40px rgba(255, 208, 0, 0.422);
-    transition: background-color 2400ms ease-in-out, opacity 2400ms ease-in-out;
-    transform: perspective(2000px);
-}
-
-#infographics:hover {
-    opacity: 1;
-    background-color: gold;
-    overflow: visible;
-}
-
-.platform-signup {
-    background-color: #000000;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(218, 218, 218, 0.1);
-    margin-top: 20px;
-  }
-  
-  .platform-signup label {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-    display:block;
-  }
-  
-  .platform-signup input[type="text"],
-  .platform-signup input[type="email"],
-  .platform-signup input[type="password"] {
+.platform-signup input,
+.platform-signup select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -208,13 +208,9 @@ html{
     border-radius: 5px;
     font-size: 1rem;
     box-shadow: 0 0 10px goldenrod inset;
-  }
+}
 
-  #gender{
-    box-shadow: 0 0 10px goldenrod inset;
-  }
-  
-  .platform-signup button[type="submit"] {
+.platform-signup button[type="submit"] {
     margin-top: 2px;
     font-family: 'Alfa Slab One';
     width: 100%;
@@ -224,246 +220,61 @@ html{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .platform-signup button[type="submit"]:hover {
-    background-color:rgb(255, 217, 0);
-    border-color: #ffffff;
-  }
+}
 
-  .platform-signup select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.897) inset;
-  }
-  
-  .password-hint {
+.platform-signup button[type="submit"]:hover {
+    background-color: rgb(255, 217, 0);
+    border-color: #fff;
+}
+
+.password-hint {
     font-size: 0.8rem;
     color: goldenrod;
     margin-top: -15px;
     margin-bottom: 20px;
     display: block;
-  }
-  
-  .social-login {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
 }
 
-.social-login a {
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.section {
+    display: none;
 }
 
-.facebook-btn {
-    background-color: #3b5998;
-}
-
-.facebook-btn:hover {
-    background-color: #304e8c;
-}
-
-.gmail-btn {
-    background-color: #dd4b39;
-}
-
-.gmail-btn:hover {
-    background-color: #c23b2e;
-}
-
-.or {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.invalid-feedback {
-    color: red;
-    font-size: 0.8rem;
-}
-
-
-.booking-form {
-    background-color: rgb(0, 0, 0);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.booking-form h1 {
-    font-family: "Khand", serif;
-    font-size: 2rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.booking-form label {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.booking-form select,
-.booking-form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.booking-form select {
-    background-color: #05b4fff9;
-}
-
-.booking-form button {
-    background-image: linear-gradient(to right, #ffdf00, #ffa500);
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
-    transition: all 0.3s ease;
-}
-
-.booking-form button:hover {
-    opacity: 0.8;
-    box-shadow: 0 0 40px rgba(255, 165, 0, 0.8);
-}
-
-.booking-form button:active {
-    transform: translateY(1px);
-}
-
-.containerx {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.driver-form h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.driver-form h2 {
-    margin-top: 30px;
-    font-size: 1.5rem;
-}
-
-.driver-form .form-label {
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.driver-form .form-control {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-
-.driver-form button[type="submit"] {
-    font-family: 'Alfa Slab One';
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.driver-form button[type="submit"]:hover {
-    background-color:rgb(255, 217, 0);
-    border-color: #000000;
+.section.active {
+    display: block;
 }
 
 footer {
-    background-color: #000;
-    padding: 20px;
-    color: #ccc;
-    text-align: center;
+  background-color: #000;
+  padding: 20px;
+  color: #ccc;
+  text-align: center;
 }
 
 footer p {
-    font-family: "Alfa Slab One", serif;
-    font-size: 0.8rem;
-    margin-bottom: 10px;
+  font-family: "Alfa Slab One", serif;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 
 footer .social-media {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 footer .social-media li {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 footer .social-media li a {
-    color: inherit;
+  color: inherit;
 }
 
 footer .social-media li a:hover {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
-
-
-@media (max-width: 768px) {
-    .video-banner,
-    .carousel-item img {
-        max-width: 100%;
-        height: auto;
-    }
-    .container {
-        padding: 10px;
-    }
-
-    .social-login {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-login a {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 390px) {
-    .hero-section {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .video-banner,
-    .carousel-item img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .main-container {
-        margin-bottom: 0;
-    }
-}
 
 @import url("lightning.css");
 :root {
@@ -572,10 +383,12 @@ footer .social-media li a:hover {
   svg {
     height: 1px;
   }
-  body {
+  .body {
     display: grid;
     place-content: center;
     min-height: 100vh;
     position: relative;
   }
   }
+
+  
