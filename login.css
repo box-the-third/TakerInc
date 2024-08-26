@@ -8,8 +8,8 @@
 body {
 background-color: rgb(67, 67, 67);
 font-weight: 700;
-
 }
+
 .container-fluid {
     width: 100%;
 }
@@ -21,6 +21,9 @@ font-weight: 700;
   padding: 1rem;
 }
 
+form{
+  flex:1;
+}
 
 .navbar-brand {
   color: #000000;

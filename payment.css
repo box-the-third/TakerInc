@@ -9,21 +9,6 @@ html {
     height: 100%;
 }
 
-.back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-family: 'Alfa Slab One';
-    background: rgba(0, 0, 0, 0.8);
-    border: none;
-    color: rgba(255, 255, 255, 0.484);
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 5px;
-    border: 2px solid hsla(0, 0%, 0%, 0.053);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 
 .video-banner {
     position: fixed;
@@ -75,6 +60,7 @@ html {
     z-index: 4;
 }
 
+
 .overlay-text {
     color:azure;
     font-family: 'Khand', sans-serif;
@@ -86,11 +72,28 @@ html {
     font-family: 'Alfa Slab One';
     background-color: #FFD700;
     border: none;
+    border-radius: 5px;
     color: black;
     padding: 0.5rem 1rem;
     cursor: pointer;
     margin-top: 1rem;
     z-index: 4;
+}
+
+.button-goldx{
+    background-color: #FFD700;
+    border: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Alfa Slab One';
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .payment-method {
