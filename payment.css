@@ -110,3 +110,116 @@ html {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 35px;
+        padding: 0.5rem;
+    }
+
+    .content {
+        padding: 1rem;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .button-gold, .button-goldx {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .overlay-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .payment-method {
+        gap: 0.8rem;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+}
+
+/* Mobile screens and below */
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 28px;
+        padding: 0.5rem;
+    }
+
+    .takerlogo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .button-gold, .button-goldx {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .content {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .overlay-text h2 {
+        font-size: 1rem;
+    }
+
+    .payment-method {
+        gap: 0.6rem;
+    }
+
+    .input-field {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    .video-banner {
+        height: 100%;
+    }
+}
+
+/* Very small mobile screens */
+@media (max-width: 360px) {
+    .navbar {
+        font-size: 24px;
+        padding: 0.4rem;
+    }
+
+    .takerlogo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .button-gold, .button-goldx {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .content {
+        padding: 0.3rem;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .overlay-text h2 {
+        font-size: 0.9rem;
+    }
+
+    .payment-method {
+        gap: 0.4rem;
+    }
+
+    .input-field {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+
+    .video-banner {
+        height: 80%;
+    }
+}
