@@ -34,35 +34,39 @@
         </div>
     </nav>
 
-    <form action="/register" method="post" class="platform-signup">
 
-      <label for="validationServerEmail" class="form-label">Email:</label>
-      <input type="email" name="email" id="validationServerEmail" aria-describedby="validationServerEmailFeedback" required>
-      <div id="validationServerEmailFeedback" class="invalid-feedback">
-        Please provide a valid email address.
-      </div>
-
-      <label for="password">Password:</label>
-      <input type="password" name="password" id="password" required>
-      <span class="password-hint" style="padding: 10px; margin: 2px;"></span>
-      
-      <div class="lightning">
-        <div class="noisy">
-          <span>Click on</span>
-          Sign In
+    <div class="content">
+      <form action="/register" method="post" class="platform-signup">
+    
+        <label for="validationServerEmail" class="form-label">Email:</label>
+        <input type="email" name="email" id="validationServerEmail" aria-describedby="validationServerEmailFeedback" required>
+        <div id="validationServerEmailFeedback" class="invalid-feedback">
+          Please provide a valid email address.
         </div>
-        <div class="noisy">
-          <span>Lets Go!</span>
-        </div>
-      </div>      
-      <button type="submit" class="button-gold">Sign In</button>
-    </form>
-  </div>
-  <footer class="bg-dark text-light text-center py-3">
-    <div class="container">
-        <p>&copy; 2024 Taker Inc. All rights reserved.</p>
+    
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <span class="password-hint" style="padding: 10px; margin: 2px;"></span>
+        
+        <div class="lightning">
+          <div class="noisy">
+            <span>Click on</span>
+            Sign In
+          </div>
+          <div class="noisy">
+            <span>Lets Go!</span>
+          </div>
+        </div>      
+    
+        <button type="submit" class="button-gold">Sign In</button>
+      </form>
     </div>
-  </footer>
+    
+    <footer class="bg-dark text-light text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 Taker Inc. All rights reserved.</p>
+      </div>
+    </footer>
 
 
   <script src="script.js"></script>

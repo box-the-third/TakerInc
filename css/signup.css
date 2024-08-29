@@ -39,6 +39,7 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 .navbar-nav .nav-link {
+font-family: 'Khand', sans-serif !important;
 color: #000000;
 margin-right: 1rem;
 transition: color 0.3s;
