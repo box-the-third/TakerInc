@@ -11,64 +11,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="validation.js"></script>
-
+  <script src="validation.js" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Taker Inc</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-              <a class="nav-link" href="driver_info_form.html">Become a Driver</a>
-              <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
-              <a class="nav-link" href="signup.html">Get in Touch!</a>
-              <a class="nav-link" href="tlcvehiclerental.html">TLC Vehicle Rental</a>
-              <a class="nav-link" href="login.html">Sign In</a>
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Taker Inc</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+          <a class="nav-link" href="driver_info_form.html">Become a Driver</a>
+          <a class="nav-link" href="booking_form.html">Book a Vehicle</a>
+          <a class="nav-link" href="signup.html">Get in Touch!</a>
+          <a class="nav-link" href="tlcvehiclerental.html">TLC Vehicle Rental</a>
+          <a class="nav-link" href="login.html">Sign In</a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-
-    <div class="content">
-      <form action="/register" method="post" class="platform-signup">
-    
+  <div class="content">
+    <form action="/register" method="post" class="platform-signup">
+      <div class="mb-3">
         <label for="validationServerEmail" class="form-label">Email:</label>
-        <input type="email" name="email" id="validationServerEmail" aria-describedby="validationServerEmailFeedback" required>
+        <input type="email" name="email" id="validationServerEmail" class="form-control" aria-describedby="validationServerEmailFeedback" required>
         <div id="validationServerEmailFeedback" class="invalid-feedback">
           Please provide a valid email address.
         </div>
-    
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required>
-        <span class="password-hint" style="padding: 10px; margin: 2px;"></span>
-        
-        <div class="lightning">
-          <div class="noisy">
-            <span>Click on</span>
-            Sign In
-          </div>
-          <div class="noisy">
-            <span>Lets Go!</span>
-          </div>
-        </div>      
-    
-        <button type="submit" class="button-gold">Sign In</button>
-      </form>
-    </div>
-    
-    <footer class="bg-dark text-light text-center py-3">
-      <div class="container">
-        <p>&copy; 2024 Taker Inc. All rights reserved.</p>
       </div>
-    </footer>
 
+      <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" name="password" id="password" class="form-control" required>
+        <div class="password-hint" style="padding: 10px; margin: 2px;"></div>
+      </div>
 
-  <script src="script.js"></script>
+      <div class="lightning">
+        <div class="noisy">
+          <span>Click on</span> Sign In
+        </div>
+        <div class="noisy">
+          <span>Let's Go!</span>
+        </div>
+      </div>      
+
+      <button type="submit" class="btn btn-warning button-gold">Sign In</button>
+    </form>
+  </div>
+  
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Taker Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
