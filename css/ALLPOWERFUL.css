@@ -1,0 +1,752 @@
+/*<---------AboutUs + Index----------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Khand", sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.value {
+    font-size: 150px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+  }
+
+.button-gold {
+    font-family: 'Alfa Slab One' !important;
+    background-color: #FFD700 !important;
+    border: none !important;
+    color: black !important;
+}
+
+/*<------Common Navbar Section----->*/
+.navbar {
+    border-bottom: 2px solid #000;
+    color: gold;
+    box-shadow: 0px 4px 2px -2px gray;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.license-info {
+    display: inline-block;
+    font-size: 8px;
+    color: #1f1f1f;
+    margin-top: -6px;
+    line-height: 0.9;
+    margin-left: 1.4px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Khand', sans-serif !important;
+    color: #000000;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd500;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/*<----Common Video banners for index, about, and driver info page---->*/
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.video-banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+.overlay-heading {
+    font-family: 'Alfa Slab One';
+    font-size: 3rem;
+    display: block;
+}
+.overlay-text {
+    font-family: 'Khand', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+}
+
+
+.button-gold {
+    background-color: #FFD700;
+    border: none;
+    color: black;
+}
+
+.button-gold:hover {
+    opacity: 1;
+    box-shadow: 0 0 40px rgba(90, 79, 57, 0.8);
+}
+
+.button-gold:active {
+    transform: translateY(1px);
+}
+
+.section {
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(19, 19, 19, 0.76);
+    overflow: visible;
+}
+
+.section p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #000000;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.788);
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    min-height: 100%; /* Avoids height shrinking */
+    position: relative;
+    transition: transform 0.6s ease-in-out; /* Smoothens the transition */
+}
+
+
+.carousel-inner img {
+    width: 100%; /* Stretches to full width */
+    height: 100%; /* Stretches to full height */
+    object-fit: cover;
+    display: block; /* Ensures it's a block-level element */
+    min-height: 100%; /* Maintains height */
+}
+
+.carousel-caption p{
+    background-color: hsla(0, 0%, 0%, 0.582);
+}
+
+.carousel-caption h5{
+    background-color: hsla(0, 0%, 0%, 0.603);
+
+}
+
+#infographics {
+    background-color: rgba(255, 241, 40, 0.785);
+    object-fit: cover;
+    padding: 20px;
+    box-shadow: 0 0 40px rgba(255, 208, 0, 0.422);
+    transition: background-color 2400ms ease-in-out, opacity 2400ms ease-in-out;
+    transform: perspective(2000px);
+}
+
+#infographics:hover {
+    opacity: 1;
+    background-color: gold;
+    overflow: visible;
+}
+
+
+
+
+
+/*<--driver_info_form-->*/
+.containerx {
+    background-color: gold;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.driver-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.driver-form h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.driver-form .form-label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.driver-form .form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.driver-form button[type="submit"] {
+    font-family: 'Alfa Slab One';
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.driver-form button[type="submit"]:hover {
+    background-color:rgb(255, 217, 0);
+    border-color: #000000;
+}
+
+
+#driver-form{
+    background-color: black;
+  }
+  
+.transparent-btn {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 2px solid white;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+  
+.transparent-btn:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-color: white;
+    }
+  
+
+.driver-form a {
+    color: #000000; 
+    }
+  
+.driver-form a:hover {
+    text-decoration: underline;  
+  }
+  
+
+.input-group {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.city-code-selector {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-width: 100px;
+    border-right: 0;
+    font-family: "Khand", sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.input-group .form-control {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 0;
+}
+
+  
+  
+.doc-container {
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+}
+  
+.doc-container h2 {
+      margin-bottom: 10px;
+      font-size: x-large;
+  }
+  
+.doc-container.flex {
+    display: flex;  
+    justify-content: space-around;
+    background-color: #ffe100;
+    border-color: #000000;
+  }
+  
+  
+.TLC{
+    font-weight: bold !important;  /* Make the text bold (optional) */
+    background-color: #ffe100;  /* Add a light background (optional) */
+    padding: 1px 1px;  /* Add some padding (optional) */
+    border-radius: 3px;  /* Add rounded corners (optional) */
+  
+}
+ 
+ul {
+      list-style: none;
+      padding: 8px;
+ }
+  
+li {
+      margin-bottom: 5px;
+}
+  
+#docudocu{
+    background-color: hsla(0, 0%, 88%, 0.495);
+    border-radius: 2px;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+/*<---this code is to make docudocu in driver_info_form italic but removed italic due to conflict with h1 and h3 in index-->*/
+h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: larger;
+  }
+  
+h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: larger;
+  }
+
+/*<---booking_form -->*/
+
+.TakerBooky {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100%; /* Ensure the div takes up its container's height */
+}
+
+.container {
+    margin-top: 20px;
+  }
+  
+  .booking-form {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .booking-form h1 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 2.5rem;
+    color:#ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .booking-form p {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .booking-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .booking-form label {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .booking-form .form-control,
+  .booking-form .form-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .booking-form .btn-gold {
+    align-items: center;
+    background-color: #FFD700;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .booking-form .btn-gold:hover {
+    background-color: #e6c200;
+  }
+/*<----driver_rental_form---->*/
+.drivercard {
+    margin-bottom: 20px;
+}
+
+/*<----driver_rental_form & leaser registration form DO NOT work with ALLPOWERFULCSS---->*/
+
+/*<----login.html---->*/
+.payment-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #FFD700;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 100px auto 0;
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="email"],
+.payment-form input[type="password"],
+.payment-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+    background-color: #222;
+    color: #FFD700;
+}
+
+.payment-form input[type="submit"] {
+    background-color: #FFD700;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.payment-form input[type="submit"]:hover {
+    background-color: #e6c200;
+}
+
+.platform-signup {
+    background-color: #000;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(218, 218, 218, 0.1);
+    
+}
+
+.platform-signup label {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.platform-signup input,
+.platform-signup select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px goldenrod inset;
+}
+
+.platform-signup button[type="submit"] {
+    margin-top: 2px;
+    margin-bottom: 100px;
+    font-family: 'Alfa Slab One';
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.platform-signup button[type="submit"]:hover {
+    background-color: rgb(255, 217, 0);
+    border-color: #fff;
+}
+
+.password-hint {
+    font-size: 0.8rem;
+    color: goldenrod;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/*<----nonmedbooking.html/payment.css---->*/
+.content {
+    font-family: 'Khand', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 2;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#zelleForm{
+    border: 2px solid rgba(255, 255, 255, 0.025);
+    padding:0.2px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    font-style: italic;
+    color: aliceblue;
+}
+
+.button-goldx{
+    background-color: #FFD700;
+    border: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Alfa Slab One';
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    z-index: 4;
+}
+
+.input-field {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 35px;
+        padding: 0.5rem;
+    }
+
+    .content {
+        padding: 1rem;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .button-gold, .button-goldx {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .overlay-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .payment-method {
+        gap: 0.8rem;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+}
+
+/* Mobile screens and below */
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 28px;
+        padding: 0.5rem;
+    }
+
+    .takerlogo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .button-gold, .button-goldx {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .content {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .overlay-text h2 {
+        font-size: 1rem;
+    }
+
+    .payment-method {
+        gap: 0.6rem;
+    }
+
+    .input-field {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    .video-banner {
+        height: 100%;
+    }
+}
+
+/* Very small mobile screens */
+@media (max-width: 360px) {
+    .navbar {
+        font-size: 24px;
+        padding: 0.4rem;
+    }
+
+    .takerlogo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .button-gold, .button-goldx {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .content {
+        padding: 0.3rem;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .overlay-text h2 {
+        font-size: 0.9rem;
+    }
+
+    .payment-method {
+        gap: 0.4rem;
+    }
+
+    .input-field {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+
+    .video-banner {
+        height: 80%;
+    }
+}
+
+
+
+
+
+/*<--Common Footer Section-->*/
+footer {
+    background-color: #000;
+    padding: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Alfa Slab One", serif;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+footer .social-media {
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .social-media li a {
+    color: inherit;
+}
+
+footer .social-media li a:hover {
+    text-decoration: none;
+    color: #000;
+}

@@ -1,20 +1,16 @@
-body {
-    font-family: "Khand", sans-serif;
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
+/*the body classes dont work here as they should*/
 html {
     scroll-behavior: smooth;
     height: 100%;
 }
-
+/*the body classes dont work here as they should*/
 body {
+    font-family: "Khand", sans-serif;
     display: flex;
     flex-direction: column;
+    place-content: center;
     min-height: 100vh;
+    margin: 0;
 }
 
 .navbar {

@@ -39,7 +39,7 @@
     <section>
         <div class="video-banner">
             <video loop autoplay muted>
-                <source src="vid1.mp4" type="video/mp4">
+                <source src ="https://videos.pexels.com/video-files/3773324/3773324-hd_1920_1080_25fps.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="text-overlay d-flex align-items-center">
@@ -52,7 +52,7 @@
         </div>
         <div class="video-banner">
             <video loop autoplay muted>
-                <source src="vid2.mp4" type="video/mp4">
+                <source src ="https://videos.pexels.com/video-files/3029469/3029469-hd_1920_1080_24fps.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="text-overlay">
@@ -63,7 +63,7 @@
         </div>
         <div class="video-banner">
           <video loop autoplay muted>
-              <source src="vid3.mp4" type="video/mp4">
+              <source src="https://videos.pexels.com/video-files/7699193/7699193-hd_1920_1080_25fps.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
           <div class="text-overlay">
@@ -76,14 +76,15 @@
     <section id="infographics" style="font-family: 'Alfa Slab One';">
         <div id="section1" class="section active">
             <h2>Population and Diversity</h2>
-            <p>High Population Density: New York City has a population of 8,804,190 as of April 1, 2020, making it one of the most densely populated cities in the United States.</p>
-            <p>Significant Growth: The population has increased by 629,057 since the 2010 Census, highlighting the city's growing demand for efficient and inclusive transportation options.</p>
+            <p>High Population Density: New York City has a population of <span class="counter" data-target="8804190">8,804,190</span> as of April 1, 2020, making it one of the most densely populated cities in the United States.</p>
+            <p>Significant Growth: The population has increased by <span class="counter" data-target="629057">629,057</span> since the 2010 Census, highlighting the city's growing demand for efficient and inclusive transportation options.</p>
         </div>
         <div id="section2" class="section">
             <h2>Challenges for Disabled Residents</h2>
-            <p>Limited Accessible Taxis: Out of the entire licensed fleet, there were only 4,297 wheelchair-accessible vehicles as of June 2023. This means that accessible taxis are a rare find and not always in service, making spontaneous travel difficult for disabled residents.</p>
-            <p>Inadequate Public Transportation: Only about 30% of the subway system is accessible, and even these accessible stations often face issues like broken elevators. Buses are slow, crowded, and unreliable, and paratransit services require advance scheduling and are inconsistent.</p>
+            <p>Limited Accessible Taxis: Out of the entire licensed fleet, there were only <span class="counter" data-target="4297">4,297</span> wheelchair-accessible vehicles as of June 2023. This means that accessible taxis are a rare find and not always in service, making spontaneous travel difficult for disabled residents.</p>
+            <p>Inadequate Public Transportation: Only about <span class="counter" data-target="30">30</span>% of the subway system is accessible, and even these accessible stations often face issues like broken elevators. Buses are slow, crowded, and unreliable, and paratransit services require advance scheduling and are inconsistent.</p>
         </div>
+    
         <div id="section3" class="section">
             <h2>Necessity for WAV</h2>
             <p>Vital for Autonomy: Accessible taxis provide crucial autonomy for disabled individuals, allowing them to travel spontaneously without depending on pre-scheduled services.</p>
@@ -101,7 +102,7 @@
         </div>
         <div id="section6" class="section">
             <h2>Our Message</h2>
-            <p>"Enhancing accessibility in New York City's transportation system is not just a necessity—it's a right. With over 8.8 million residents, including a significant number of disabled individuals, it's crucial to provide reliable and accessible transportation options. Despite having 4,297 wheelchair-accessible vehicles in the licensed fleet, many disabled residents still struggle with spontaneous travel due to limited availability and service. By increasing the number of Wheelchair Accessible Vehicles, we can ensure that all New Yorkers have equal access to the city's vast opportunities and amenities. Let's make New York City a more inclusive and accessible place for everyone."</p>
+            <p>"Enhancing accessibility in New York City's transportation system is not just a necessity—it's a right. With over <span class="counter" data-target="8.8">8.8</span>million residents, including a significant number of disabled individuals, it's crucial to provide reliable and accessible transportation options. Despite having 4,297 wheelchair-accessible vehicles in the licensed fleet, many disabled residents still struggle with spontaneous travel due to limited availability and service. By increasing the number of Wheelchair Accessible Vehicles, we can ensure that all New Yorkers have equal access to the city's vast opportunities and amenities. Let's make New York City a more inclusive and accessible place for everyone."</p>
         </div>
     </section>
     
@@ -111,15 +112,6 @@
         </div>
     </footer>
     <script>
-        document.getElementById('book-now-btn').addEventListener('click', function() {
-            window.location.href = 'booking_form.html';
-        });
-
-        document.getElementById('drive-with-takers-btn').addEventListener('click', function() {
-            window.location.href = 'driver_info_form.html';
-        });
-        
-
         let currentSection = 0;
         const sections = document.querySelectorAll('.section');
 
@@ -139,11 +131,30 @@
         currentSection = nextSection;
     }, 2000);
 }
-
-sections[currentSection].style.display = 'block';
-sections[currentSection].style.opacity = 1;
-
-setInterval(showNextSection, 16000);
+function animateCounters() {
+            const counters = document.querySelectorAll('.section  .counter');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let start = 0;
+                const increment = target / 100; // Adjust the increment value for speed
+                const updateCounter = () => {
+                    start += increment;
+                    if (start < target) {
+                        counter.textContent = Math.floor(start).toLocaleString();
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target.toLocaleString();
+                    }
+                };
+                updateCounter();
+            });
+        }
+    
+        sections[currentSection].style.display = 'block';
+        sections[currentSection].style.opacity = 1;
+        animateCounters(); // Start the counter animation for the first section
+    
+        setInterval(showNextSection, 16000);
     </script>
 </body>
 </html>

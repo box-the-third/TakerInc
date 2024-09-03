@@ -1,20 +1,15 @@
-body {
-    font-family: "Khand", sans-serif;
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
 html {
     scroll-behavior: smooth;
     height: 100%;
 }
 
 body {
+    font-family: "Khand", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
+    place-content: center;
 }
 
 .navbar {
@@ -86,7 +81,7 @@ body {
     margin-bottom: 10px;
 }
 
-.card {
+.drivercard {
     margin-bottom: 20px;
 }
 

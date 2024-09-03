@@ -36,7 +36,7 @@
 
 <div class="video-banner">
   <video loop autoplay muted>
-    <source src="drivah.mp4" type="video/mp4">
+    <source src="https://videos.pexels.com/video-files/4254118/4254118-uhd_2732_1440_24fps.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <div class="text-overlay">
@@ -50,168 +50,167 @@
 
 <section id="docudocu">
   <br>
-  <h3>All you'll need to be a driver at Taker Inc is a TLC license from the<a href="https://www.nyc.gov/site/tlc/index.page" style="font-weight: bold;"> NYC TLC <span class="TLC">(Taxi and Limousine Commission)</span></a> & a TLC Licensed Vehicle (owned or rented) </h3>  
+  <h3>
+    All you'll need to be a driver at Taker Inc is a TLC license from the
+    <a href="https://www.nyc.gov/site/tlc/index.page" style="font-weight: bold; color: black;">
+      NYC TLC <span class="TLC">(Taxi and Limousine Commission)</span>
+    </a>
+    & a TLC Licensed Vehicle (owned or rented)
+  </h3>  
   <br>
-  <h1>Once you have your documents ready, Just Click on Sign Up! </h1>
+  <h1>Once you have your documents ready, Just Click on Sign Up!</h1>
 
-    <div class="doc-container flex">
-        <h2>Personal Documents</h2>
-        <ul>
-            <li>DMV Driver's License</li>
-            <li>TLC Driver's License</li>
-            <li>Social Security Card</li>
-            <li>Zelle</li>
-        </ul>
-    </div>
+  <div class="doc-container flex">
+    <h2>Personal Documents</h2>
+    <ul>
+      <li><span class="TLC">DMV Driver's License</span></li>
+      <li><span class="TLC">TLC Driver's License</span></li>
+      <li>Social Security Card</li>
+      <li>Zelle</li>
+    </ul>
+  </div>
 
-    <div class="doc-container flex">
-        <h2>Vehicle Documentation</h2>
-        <ul>
-            <li>Registration Paper</li>
-            <li>Proof Of Insurance</li>
-            <li>State of Inspection<br>(Document)</li>
-            <li>TLC Inspection (Document)</li>
-        </ul>
-    </div>
+  <div class="doc-container flex">
+    <h2>Vehicle Documentation</h2>
+    <ul>
+      <li>Registration Paper</li>
+      <li>Proof Of Insurance</li>
+      <li>State of Inspection<br>(Document)</li>
+      <li>TLC Inspection (Document)</li>
+    </ul>
+  </div>
   </section>
 
 
   <section id="driver-form" class="p-8">
-
-  <div class="container mt-5">
-    <div class="containerx">
-      <h1>Driver Information Form</h1>
-      <form class="driver-form">
-        <h2>Personal Documents:</h2>
-        <div class="mb-3">
-          <label for="dmv-license" class="form-label">DMV Driver's License</label>
-          <input type="file" class="form-control" id="dmv-license" required>
-        </div>
-        <div class="mb-3">
-          <label for="tlc-license" class="form-label">TLC Driver's License</label>
-          <input type="file" class="form-control" id="tlc-license" required>
-        </div>
-        <div class="mb-3">
-          <label for="social-security" class="form-label">Social Security Number</label>
-          <input type="password" class="form-control" id="social-security" maxlength="9" required> 
-        </div>
-        <div class="mb-3">
-          <label for="void-check-deposit" class="form-label">Mode of Payment</label>
-          <select class="form-control" id="void-check-deposit" required>
-            <option value="" disabled selected>We accept Zelle</option>
-            <option value="void-check">Zelle</option>
-          </select>
-        </div>
-        <div class="mb-3" id="Zelle-container" style="display: none;">
-          <label for="Zelle" class="form-label">Zelle</label>
-          <input type="file" class="form-control" id="Zelle">
-        </div>
-        <h2>Vehicle Documentation:</h2>
-        <div class="mb-3">
-          <label for="registration" class="form-label">Registration Paper</label>
-          <input type="file" class="form-control" id="registration" required>
-        </div>
-        <div class="mb-3">
-          <label for="insurance-proof" class="form-label">Proof of Insurance</label>
-          <input type="file" class="form-control" id="insurance-proof" required>
-        </div>
-        <div class="mb-3">
-          <label for="ny-inspection" class="form-label">State of Inspection</label>
-          <input type="file" class="form-control" id="ny-inspection" required>
-        </div>
-        <div class="mb-3">
-          <label for="tlc-inspection" class="form-label">TLC Inspection</label>
-          <input type="file" class="form-control" id="tlc-inspection" required>
-        </div>
-        <button type="submit" class="btn btn-primary button-gold" >Submit</button>
-      </form>
+    <div class="container mt-5">
+      <div class="containerx">
+        <h1>Driver Information Form</h1>
+        <form class="driver-form">
+          <h2>Personal Documents:</h2>
+          <div class="mb-3">
+            <label for="dmv-license" class="form-label">DMV Driver's License</label>
+            <input type="file" class="form-control" id="dmv-license" required>
+          </div>
+          <div class="mb-3">
+            <label for="tlc-license" class="form-label">TLC Driver's License</label>
+            <input type="file" class="form-control" id="tlc-license" required>
+          </div>
+          <div class="mb-3">
+            <label for="social-security" class="form-label">Social Security Number</label>
+            <input type="password" class="form-control" id="social-security" maxlength="9" required> 
+          </div>
+          <div class="mb-3">
+            <label for="zelleEmail" class="form-label">Zelle Email</label>
+            <input type="email" class="form-control" id="zelleEmail" maxlength="40" required placeholder="Enter the Email associated with your Zelle Account">  
+          </div>
+          <div class="mb-3">
+            <label for="zelleNumber" class="form-label">Zelle Mobile Number</label>
+            <div class="input-group">
+              <select class="form-select form-control city-code-selector" id="city-code" required>
+                <option value="212">+212</option>
+                <option value="917">+917</option>
+                <option value="718">+718</option>
+                <option value="646">+646</option>
+                <option value="347">+347</option>
+              </select>
+              <input type="tel" class="form-control" id="zelleNumber" maxlength="10" required placeholder="Enter your 10-digit mobile number">
+            </div>
+          </div>
+          <h2>Vehicle Documentation:</h2>
+          <div class="mb-3">
+            <label for="registration" class="form-label">Registration Paper</label>
+            <input type="file" class="form-control" id="registration" required>
+          </div>
+          <div class="mb-3">
+            <label for="insurance-proof" class="form-label">Proof of Insurance</label>
+            <input type="file" class="form-control" id="insurance-proof" required>
+          </div>
+          <div class="mb-3">
+            <label for="ny-inspection" class="form-label">State of Inspection</label>
+            <input type="file" class="form-control" id="ny-inspection" required>
+          </div>
+          <div class="mb-3">
+            <label for="tlc-inspection" class="form-label">TLC Inspection</label>
+            <input type="file" class="form-control" id="tlc-inspection" required>
+          </div>
+          <button type="submit" class="btn btn-primary button-gold">Submit</button>
+        </form>
+      </div>
     </div>
-  </div>
   </section>
- 
+  
   <footer class="bg-dark text-light text-center py-3">
     <div class="container">
-        <p>&copy; 2024 Taker Inc. All rights reserved.</p>
+      <p>&copy; 2024 Taker Inc. All rights reserved.</p>
     </div>
-</footer>
+  </footer>
 
   <script>
-    document.getElementById('menu-btn').addEventListener('click', function() {
-      var menu = document.getElementById('menu');
-      if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-      } else {
-        menu.classList.add('hidden');
-      }
-    });
-    
-    const socialSecurityInput = document.getElementById('social-security');
-    const driverForm = document.getElementById('driver-form');
+  document.addEventListener('DOMContentLoaded', function() {
+  const socialSecurityInput = document.getElementById('social-security');
+  const zelleNumberInput = document.getElementById('zelleNumber');
+  const driverForm = document.getElementById('driver-form');
 
-    // Mask the SSN input with asterisks while maintaining formatting
-    socialSecurityInput.addEventListener('input', function() {
-      let value = this.value.replace(/\D/g, ''); // Remove non-digit characters
-      let formattedValue = '';
+  // Mask the SSN input with asterisks while maintaining formatting
+  socialSecurityInput.addEventListener('input', function() {
+    let value = this.value.replace(/\D/g, ''); // Remove non-digit characters
+    let formattedValue = '';
 
-      if (value.length <= 3) {
-        formattedValue = value;
-      } else if (value.length <= 5) {
-        formattedValue = value.slice(0, 3) + '-' + value.slice(3);
-      } else {
-        formattedValue = value.slice(0, 3) + '-' + value.slice(3, 5) + '-' + value.slice(5);
-      }
+    if (value.length <= 3) {
+      formattedValue = value;
+    } else if (value.length <= 5) {
+      formattedValue = value.slice(0, 3) + '-' + value.slice(3);
+    } else {
+      formattedValue = value.slice(0, 3) + '-' + value.slice(3, 5) + '-' + value.slice(5);
+    }
 
-      // Replace digits with asterisks for security
-      let maskedValue = formattedValue.replace(/\d/g, '*');
+    // Replace digits with asterisks for security
+    let maskedValue = formattedValue.replace(/\d/g, '*');
 
-      // Keep the real value in a data attribute
-      this.setAttribute('data-ssn', value);
-      this.value = maskedValue;
-    });
+    // Keep the real value in a data attribute
+    this.setAttribute('data-ssn', value);
+    this.value = maskedValue;
+  });
 
-    // Encrypt the SSN before form submission
-    driverForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
+  // Validate Zelle number input
+  zelleNumberInput.addEventListener('input', function() {
+    let value = this.value.replace(/\D/g, ''); // Remove non-digit characters
+    if (value.length > 10) {
+      value = value.slice(0, 10); // Limit to 10 digits
+    }
+    this.value = value;
+  });
 
-      const ssn = socialSecurityInput.getAttribute('data-ssn');
-      if (ssn.length === 9) {
-        // Encrypt the SSN using CryptoJS
-        const encryptedSSN = CryptoJS.AES.encrypt(ssn, 'secret-key-123').toString();
+  // Encrypt the SSN before form submission
+  driverForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
 
-        // Create a hidden input to store the encrypted SSN
-        const encryptedSSNInput = document.createElement('input');
-        encryptedSSNInput.type = 'hidden';
-        encryptedSSNInput.name = 'encrypted-ssn';
-        encryptedSSNInput.value = encryptedSSN;
+    const ssn = socialSecurityInput.getAttribute('data-ssn');
+    if (ssn && ssn.length === 9) {
+      // Encrypt the SSN using CryptoJS
+      const encryptedSSN = CryptoJS.AES.encrypt(ssn, 'secret-key-123').toString();
 
-        // Append the hidden input to the form
-        driverForm.appendChild(encryptedSSNInput);
+      // Create a hidden input to store the encrypted SSN
+      const encryptedSSNInput = document.createElement('input');
+      encryptedSSNInput.type = 'hidden';
+      encryptedSSNInput.name = 'encrypted-ssn';
+      encryptedSSNInput.value = encryptedSSN;
 
-        // Clear the SSN input field to avoid sending it in plain text
-        socialSecurityInput.value = '';
-        socialSecurityInput.removeAttribute('data-ssn');
+      // Append the hidden input to the form
+      driverForm.appendChild(encryptedSSNInput);
 
-        // Submit the form
-        driverForm.submit();
-      } else {
-        alert('Please enter a valid Social Security Number.');
-      }
-    });
-        
-        // Show or hide the appropriate input field based on the selected option
-    const voidCheckDepositSelect = document.getElementById('Zelle-deposit');
-    const ZelleContainer = document.getElementById('Zelle-container');
+      // Clear the SSN input field to avoid sending it in plain text
+      socialSecurityInput.value = '';
+      socialSecurityInput.removeAttribute('data-ssn');
 
-    voidCheckDepositSelect.addEventListener('change', function() {
-      if (this.value === 'Zelle') {
-        ZelleContainer.style.display = 'block';
-        directDepositContainer.style.display = 'none';
-      } else if (this.value === 'direct-deposit') {
-        ZelleContainer.style.display = 'none';
-        directDepositContainer.style.display = 'block';
-      }
-    });
-    
+      // Submit the form
+      driverForm.submit();
+    } else {
+      alert('Please enter a valid Social Security Number.');
+    }
+  });
+});
   </script>
 </body>
 </html>

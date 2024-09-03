@@ -112,6 +112,13 @@ html {
     border-radius: 4px;
 }
 
+
+.squareuplogo img{
+   padding-top: 15px;
+
+}
+
+
 @media (max-width: 768px) {
     .navbar {
         font-size: 35px;
@@ -155,6 +162,11 @@ html {
         height: 180px;
     }
 
+    .squareuplogo img {
+        width: 180px;
+        height: 180px;
+    }
+
     .button-gold, .button-goldx {
         padding: 0.3rem 0.6rem;
         font-size: 0.8rem;
@@ -192,6 +204,11 @@ html {
     }
 
     .takerlogo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .squareuplogo img {
         width: 150px;
         height: 150px;
     }

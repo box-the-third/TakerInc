@@ -1,12 +1,10 @@
 body {
     font-family: "Khand", sans-serif;
-}
-
-body {
     display: grid;
     place-content: center;
     min-height: 100vh;
-  }
+}
+
 
 html{
     scroll-behavior: smooth;
@@ -65,11 +63,13 @@ html{
 
 
 .containerx {
+    background-color: gold;
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 .text-overlay {
@@ -205,6 +205,8 @@ h1{
 }
   
 .doc-container h2 {
+      font-size: 1.8rem;
+      color: #000000;
       margin-bottom: 10px;
       font-size: x-large;
   }
@@ -212,37 +214,56 @@ h1{
 .doc-container.flex {
     display: flex;  
     justify-content: space-around;
-    background-color: #ffe100;
+    background-color: gold;
     border-color: #000000;
   }
   
-.containerx{
-    background-color: #facd38;
+  
+.TLC {
+    font-weight: bold !important;
+    background-color: gold;
+    border-radius: 5px;
+    color: #000000;
 }
-  
-  
-.TLC{
-    font-weight: bold !important;  /* Make the text bold (optional) */
-    background-color: #ffe100;  /* Add a light background (optional) */
-    padding: 1px 1px;  /* Add some padding (optional) */
-    border-radius: 3px;  /* Add rounded corners (optional) */
-  
+
+.input-group {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 0;
 }
+
+.city-code-selector {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-width: 100px;
+    border-right: 0;
+    font-family: "Khand", sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
  
 ul {
-      list-style: none;
-      padding: 8px;
+    list-style: none;
+    padding: 8px;
  }
   
 li {
-      margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
   
-#docudocu{
+#docudocu {
     background-color: hsla(0, 0%, 88%, 0.495);
     border-radius: 2px;
     border-color: #000000;
     border-width: 1px;
+    padding: 20px;
 }
 
 footer {
