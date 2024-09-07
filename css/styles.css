@@ -3,13 +3,10 @@
 
 body {
     font-family: "Khand", sans-serif;
-}
-
-body {
     display: grid;
     place-content: center;
     min-height: 100vh;
-  }
+}
 
 html{
     scroll-behavior: smooth;

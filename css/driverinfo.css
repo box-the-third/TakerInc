@@ -96,6 +96,30 @@ html{
     font-size: 1.5rem;
 }
 
+.button-gold {
+    background-color: #FFD700 !important;
+    border: none;
+    color: black;
+}
+
+.button-gold:hover {
+    opacity: 1;
+    box-shadow: 0 0 40px rgb(255, 221, 0);
+    transition: 1.5s;
+}
+
+.button-gold:active {
+    transform: translateY(1px);
+}
+
+#driver-info-btn{
+    color: #000000;
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border-color: #ff0000;
+}
+
 
 .video-banner {
     position: relative;
